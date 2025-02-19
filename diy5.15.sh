@@ -28,7 +28,7 @@ rm -rf package/custom; mkdir package/custom
 
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-# sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 # sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 git clone https://github.com/jerrykuku/lua-maxminddb.git  package/lua-maxminddb
 # git clone https://github.com/jerrykuku/luci-app-vssr.git  package/luci-app-vssr
